@@ -25,7 +25,7 @@
   (interactive)
   (save-buffer)
   (message "Updating sxhkd...")
-  (signal-process "sxhkd" 'USR-1))
+  (signal-process "sxhkd" 'USR1))
 
 (defvar sxhkd-mode-map
   (let ((map (make-sparse-keymap)))
