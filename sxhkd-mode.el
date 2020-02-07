@@ -42,6 +42,7 @@
 (defvar sxhkd-mode-hook nil
   "Hooks to run after entering `sxhkd-mode'.")
 
+;;;###autoload
 (define-derived-mode sxhkd-mode sh-mode "sxhkd"
   "Basic major mode for editing sxhkd config files.
 
