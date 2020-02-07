@@ -31,11 +31,11 @@
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "C-c C-c") #'sxhkd-update-sxhkd)
     map)
-  "Keymap for sxhkd major mode")
+  "Keymap for sxhkd major mode.")
 
 
 (defvar sxhkd-mode-hook nil
-  "Hooks to run after entering `sxhkd-mode'")
+  "Hooks to run after entering `sxhkd-mode'.")
 
 (define-derived-mode sxhkd-mode sh-mode "sxhkd"
   "Basic major mode for editing sxhkd config files.
