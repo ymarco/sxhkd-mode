@@ -33,6 +33,11 @@
     map)
   "Keymap for sxhkd major mode.")
 
+(defgroup sxhkd nil
+  "Group for sxhkd-mode relatex stuff."
+  :group 'sxhkd
+  :prefix "sxhkd-"
+  :link '(url-link :tag "Homepage" "https://github.com/yoavm448/sxhkd-mode"))
 
 (defvar sxhkd-mode-hook nil
   "Hooks to run after entering `sxhkd-mode'.")
@@ -49,7 +54,8 @@ modifiers and special keys. Use C-c C-c to update sxhkd.")
 
 (defface sxhkd-bspc-face
   '((t :inherit font-lock-type-face))
-  "Face used to mark the 'bspc' command")
+  "Face used to mark the 'bspc' command"
+  :group 'sxhkd)
 
 (font-lock-add-keywords
  'sxhkd-mode
