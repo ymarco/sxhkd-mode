@@ -29,7 +29,7 @@
 
 (defvar sxhkd-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c C-c") #'sxhkd-test)
+    (define-key map (kbd "C-c C-c") #'sxhkd-update-sxhkd)
     map)
   "Keymap for sxhkd major mode")
 
