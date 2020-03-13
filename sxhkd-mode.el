@@ -21,7 +21,7 @@
 
 
 (defun sxhkd-update-sxhkd ()
-  "Save buffer and send a USR-1 to sxhkd for it to reload the config."
+  "Save buffer and send a USR1 to sxhkd for it to reload the config."
   (interactive)
   (save-buffer)
   (message "Updating sxhkd...")
