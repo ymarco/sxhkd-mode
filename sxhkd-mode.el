@@ -28,9 +28,9 @@
   (signal-process "sxhkd" 'USR1))
 
 (defvar sxhkd-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c C-c") #'sxhkd-update-sxhkd)
-    map)
+  (let ((keymap (make-sparse-keymap)))
+    (define-key keymap (kbd "C-c C-c") #'sxhkd-update-sxhkd)
+    keymap)
   "Keymap for sxhkd major mode.")
 
 (defgroup sxhkd nil
