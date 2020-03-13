@@ -16,6 +16,10 @@
 ;;; Commentary:
 ;;
 ;;  Simple major mode to edit sxhkd config files
+;;  This mode inherits from `sh-mode`, and just adds some faces to highlight key
+;;  names (ctrl, Print...)
+;;
+;;  Use C-c C-c (`sxhkd-update-sxhkd') to update sxhkd through a USR1 signal.
 ;;
 ;;; Code:
 
