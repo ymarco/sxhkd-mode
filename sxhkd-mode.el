@@ -29,7 +29,7 @@
   (interactive)
   (save-buffer)
   (message "Updating sxhkd...")
-  (signal-process "sxhkd" 'USR1))
+  (start-process "pkill" nil "pkill" "-USR1" "sxhkd"))
 
 (defvar sxhkd-mode-map
   (let ((keymap (make-sparse-keymap)))
